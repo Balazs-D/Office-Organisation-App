@@ -1,0 +1,55 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.main-cont {
+  width: 100%;
+  height: 100vh;
+  background: lightblue;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  padding: 3vw;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.week {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+}
+
+.week-col {
+   border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.days {
+  margin: 1vw;
+}
+
+
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
+}
