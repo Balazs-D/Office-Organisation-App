@@ -1,4 +1,5 @@
 import React, { useState, useEffect, Component } from 'react';
+import { createStore } from 'redux';
 import '../assets/css/style.css';
 import Employees from './Employees';
 import Plan from './Plan';
@@ -28,7 +29,7 @@ export default class App extends Component {
         className='container-fluid bg-info d-flex flex-column'
         style={{ height: '100vh' }}
       >
-        <h1 className='mx-auto m-3'>Office management plan:</h1>
+        <h1 className='mx-auto m-3 text-uppercase'>Office management plan:</h1>
 
       
           <div className='info-section d-flex flex-row w-100 justify-content-around'>

@@ -5,9 +5,14 @@ export default class Employees extends Component {
     super(props);
 
     this.state = {};
-  }
+  };
+
+
 
   render() {
+
+
+
     return (
       
         <div className='w-25'>
