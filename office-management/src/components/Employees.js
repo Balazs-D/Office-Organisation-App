@@ -5,7 +5,7 @@ const Employees = () => {
   const officeContext = useContext(OfficeContext);
 
   return (
-    <div className='w-25'>
+    <div className='w-25 mx-auto'>
       <ul className='list-group'>
         {officeContext.staff.map((employee, i) => {
           return (

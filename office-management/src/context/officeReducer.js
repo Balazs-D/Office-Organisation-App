@@ -1,5 +1,6 @@
 import {
-    IS_HERE
+    IS_HERE,
+    CLICKED
 } from './types';
 
 
@@ -9,9 +10,16 @@ export default(state, action)=>{
         case IS_HERE:
             return{
                 ...state,
-                state : action.payload,                              
+                state : action.payload,  
+                                            
             
             };
+
+        case CLICKED:
+            return{
+                ...state,
+                state: action.payload,
+            }
 
         
             

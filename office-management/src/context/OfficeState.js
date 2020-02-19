@@ -1,10 +1,11 @@
 import React, { useReducer, setState } from 'react';
 import OfficeContext from './officeContext';
 import OfficeReducer from './officeReducer';
-import { IS_HERE } from './types';
+import { IS_HERE, CLICKED } from './types';
 
 const OfficeState = props => {
   const initialState = {
+    click: 0,
     week: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
     staff: [
       {
@@ -48,10 +49,17 @@ const OfficeState = props => {
 
     let updatedStaff = { ...state };
     updatedStaff.staff[index].available = !status;
+    let clicked = {...state};
+    state.click = state.click + 1;
 
     dispatch({
       type: IS_HERE,
       payload: updatedStaff
+    });
+
+    dispatch({
+      type: CLICKED,
+      payload: clicked
     });
 
     console.log(updatedStaff);
@@ -64,11 +72,14 @@ const OfficeState = props => {
     e.stopPropagation();
   };
 
+  
+
   return (
     <OfficeContext.Provider
       value={{
         week: state.week,
         staff: state.staff,
+        click: state.click,
         isHere,
         blockClick
       }}
