@@ -9,6 +9,7 @@ export default(state, action)=>{
         case IS_HERE:
             return{
                 ...state,
+                state : action.payload,                              
             
             };
 

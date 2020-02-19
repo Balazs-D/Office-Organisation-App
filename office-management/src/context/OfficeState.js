@@ -26,14 +26,20 @@ const OfficeState = props => {
 
     const index = e.target.id
     const status = state.staff[index].available;
-    console.log(status)
+    console.log('1: ' + status)
+
+    let updatedStaff = { ...state };
+    updatedStaff.staff[index].available = !status;
+    
+    
 
     dispatch({
         type: IS_HERE,
-        payload: !status,
+        payload: updatedStaff
     })
   
-    console.log(status)
+   console.log(updatedStaff)
+    console.log('2: ' + status);
 
   };
 
