@@ -1,9 +1,19 @@
+import {
+    IS_HERE
+} from './types';
 
 
 export default(state, action)=>{
     switch (action.type){
         
-        //case FUNCTION_NAME:
+        case IS_HERE:
+            return{
+                ...state,
+            
+            };
+
+        
+            
         //return{
         //    ...state,
         //    key: value,
