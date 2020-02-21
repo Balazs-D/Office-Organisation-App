@@ -1,38 +1,28 @@
-# Office management application
+# Office Management tool
 
-You will create an application to organize the office's management.
+### Description
 
-Everyday in the morning we need an employe to open the office, the conference room, etc.
-In the afternoon we need another employe to lockdown the rooms before closing the office.
+Simple application to organize the office's management.
 
-If an employe isn't available we need to change the weekly plan
+Everyday in the morning we need an employee to open the office, the conference room, etc. In the afternoon we need another employee to lock-down the rooms before closing the office.
 
+If an employee isn't available we need to change the weekly plan.
 
-# Application features
-- A list of all the employee (provided)
-- An overview of available/unavailable employee
-- A weekly plan with the shifts for the available employee
-- Employee rotation always follows the same order
-- If an employee becomes unavailable the weekly plan will update accordingly
+### Application features
 
+A list of all the employee (provided)
+An overview of available/unavailable employee
+A weekly plan with the shifts for the available employee
+Employee rotation always follows the same order
+If an employee becomes unavailable the weekly plan will update accordingly
 
-## Employee
-- **Alex** from Tech department
-- **Bea** from Project managment
-- **Carl** from Human resources
-- **Dasha** from Backend dev team
-- **Eric** from Business development
-- **Francesca** from Frontend dev team
-- **Gabriella** from Online marketing
+### Tech
 
-## Working week
-The office is open from Monday to Friday
+- React
+- Bootstrap
 
-# Development deadline
-You want to deliver the application as soon as possible
+### Preview
 
-# Bonus
-- React Hooks
-- State Management
-- Persisting data
-- Responsive design
+![screenshot](screenshot.png)
+
+[Go to app](office-management.now.sh)
