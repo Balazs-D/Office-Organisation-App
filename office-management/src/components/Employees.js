@@ -5,7 +5,7 @@ const Employees = () => {
   const officeContext = useContext(OfficeContext);
 
   return (
-    <div className='w-25'>
+    <div className='w-25 pt-3'>
       <h4 className='w-100 bg-warning border border-dark rounded p-1 text-center'>Sing in / out!</h4>
       <ul className='list-group border border-dark rounded'>
         {officeContext.staff.map((employee, i) => {
@@ -16,12 +16,16 @@ const Employees = () => {
             >
               {employee.name}
               <span
-                className='d-flex w-50 p-2 badge badge-secondary justify-content-between'
+                className='d-flex w-50 badge badge-secondary justify-content-around pt-2'
                 id={i}
                 onClick={officeContext.isHere}
                 style={{ cursor: 'pointer' }}
               >
-                {employee.dep}
+                
+                <p className='badge badge-warning'>{employee.dep}</p>
+                <p style={{ fontSize: '0.6vw' }} x>
+                  Is
+                </p>
                 {employee.available ? (
                   <p
                     onClick={officeContext.blockClick}

@@ -14,8 +14,8 @@ const App = () => {
   return (
     <OfficeState>
       <div
-        className='container-fluid bg-info w-100 d-flex flex-column m-0 p-0'
-        style={{ height: '100vh' }}
+        className='container-fluid bg-info w-100 d-flex flex-column m-0 p-0 pb-5'
+        // style={{ height: '100vh' }}
       >
         <h1 className='p-3 text-light text-uppercase w-100 bg-dark text-center'>Office management plan</h1>
 
