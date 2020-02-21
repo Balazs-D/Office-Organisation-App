@@ -25,4 +25,4 @@ If an employee becomes unavailable the weekly plan will update accordingly
 
 ![screenshot](screenshot.png)
 
-[Go to app](http://https://zeit.co/balazs-d/office-management/)
+[Go to app](http://office-management-bhczgzhdv.now.sh)
