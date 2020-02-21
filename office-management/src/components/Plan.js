@@ -133,6 +133,21 @@ const Plan = () => {
           })}
         </li>
       </ul>
+
+      {selection.length !== 0 ? (
+        <h5
+          className='border text-center p-1 mt-2 text-dark w-100 border bg-success border-dark align-items-center rounded'
+          style={{ width: '100%' }}
+        >
+          Mark if its done!
+        </h5>
+      ) : (
+        <h4
+         
+        >
+         
+        </h4>
+      )}
     </div>
   );
 };

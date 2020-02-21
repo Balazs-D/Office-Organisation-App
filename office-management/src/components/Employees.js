@@ -6,7 +6,7 @@ const Employees = () => {
 
   return (
     <div className='w-25 pt-3'>
-      <h4 className='w-100 bg-warning border border-dark rounded p-1 text-center'>Sing in / out!</h4>
+      <h4 className='w-100 bg-warning border border-dark rounded p-1 text-center'>Check in / out!</h4>
       <ul className='list-group border border-dark rounded'>
         {officeContext.staff.map((employee, i) => {
           return (
