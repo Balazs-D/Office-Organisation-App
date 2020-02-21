@@ -14,12 +14,13 @@ const App = () => {
   return (
     <OfficeState>
       <div
-        className='container-fluid bg-info d-flex flex-column'
+        className='container-fluid bg-info w-100 d-flex flex-column m-0 p-0'
         style={{ height: '100vh' }}
       >
-        <h1 className='mx-auto m-3 text-uppercase'>Office management plan:</h1>
+        <h1 className='p-3 text-light text-uppercase w-100 bg-dark text-center'>Office management plan</h1>
 
-        <div className='info-section d-flex flex-row w-100 justify-content-around'>
+        <div className='info-section d-flex flex-row w-100  justify-content-around'>
+        
           <Employees />
           <Plan />
         </div>

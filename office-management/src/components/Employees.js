@@ -5,8 +5,9 @@ const Employees = () => {
   const officeContext = useContext(OfficeContext);
 
   return (
-    <div className='w-25 mx-auto'>
-      <ul className='list-group'>
+    <div className='w-25'>
+      <h4 className='w-100 bg-warning border border-dark rounded p-1 text-center'>Sing in / out!</h4>
+      <ul className='list-group border border-dark rounded'>
         {officeContext.staff.map((employee, i) => {
           return (
             <li
@@ -18,7 +19,7 @@ const Employees = () => {
                 className='d-flex w-50 p-2 badge badge-secondary justify-content-between'
                 id={i}
                 onClick={officeContext.isHere}
-                style={{cursor: 'pointer'}}
+                style={{ cursor: 'pointer' }}
               >
                 {employee.dep}
                 {employee.available ? (

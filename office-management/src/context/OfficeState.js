@@ -13,26 +13,26 @@ const OfficeState = props => {
         available: false,
         dep: 'Tech'
       },
-      { name: 'Bea', available: true, dep: 'PM' },
-      { name: 'Carl', available: true, dep: 'HR' },
+      { name: 'Bea', available: false, dep: 'PM' },
+      { name: 'Carl', available: false, dep: 'HR' },
       {
         name: 'Dasha',
-        available: true,
+        available: false,
         dep: 'B-Dev'
       },
       {
         name: 'Eric',
-        available: true,
+        available: false,
         dep: 'Buss-Dev'
       },
       {
         name: 'Francesca',
-        available: true,
+        available: false,
         dep: 'F-Dev'
       },
       {
         name: 'Gabriella',
-        available: true,
+        available: false,
         dep: 'OM'
       }
     ]
