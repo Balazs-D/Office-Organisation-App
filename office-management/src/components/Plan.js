@@ -46,23 +46,20 @@ const Plan = () => {
   const doToggle = e => {
     // selection.map((emp, i) => {
     //   if (i === e.target.value) {
-        if (e.target.style.backgroundColor !== 'green') {
-          e.target.style.backgroundColor = 'green';
-        }
-       else {
-        e.target.style.backgroundColor = 'white';
-      }
+    if (e.target.style.backgroundColor !== 'green') {
+      e.target.style.backgroundColor = 'green';
+    } else {
+      e.target.style.backgroundColor = 'white';
+    }
 
-      console.log(e.target.style.backgroundColor);
-    };
-
-  
+    console.log(e.target.style.backgroundColor);
+  };
 
   return (
     <div className='d-flex align-items-center rounded flex-column justify-content-center'>
       {selection.length !== 0 ? (
         <h5
-          className='border p-1 text-dark w-100 border bg-success border-dark align-items-center rounded'
+          className='border p-1 text-dark w-100 border bg-warning border-dark align-items-center rounded'
           style={{ width: '100%' }}
         >
           Don't forget to open up / close down the office.
@@ -136,17 +133,13 @@ const Plan = () => {
 
       {selection.length !== 0 ? (
         <h5
-          className='border text-center p-1 mt-2 text-dark w-100 border bg-success border-dark align-items-center rounded'
+          className='border text-center p-1 mt-2 text-dark w-100 border bg-warning border-dark align-items-center rounded'
           style={{ width: '100%' }}
         >
           Mark if its done!
         </h5>
       ) : (
-        <h4
-         
-        >
-         
-        </h4>
+        <h4></h4>
       )}
     </div>
   );
